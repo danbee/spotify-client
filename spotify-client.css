@@ -1,0 +1,30 @@
+/* CSS declarations go here */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+ul.songs {
+  list-style: none;
+  padding-left: 0;
+}
+
+  ul.songs li:after {
+    content: "";
+    display: block;
+    clear: left;
+    margin-bottom: 0.5em;
+  }
+
+  ul.songs .album {
+    color: #666;
+    font-style: italic;
+  }
+
+img.cover {
+  float: left;
+  margin-right: 1em;
+}

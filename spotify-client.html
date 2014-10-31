@@ -1,0 +1,23 @@
+<head>
+  <title>Spotify Client</title>
+</head>
+
+<body>
+  <form class="search">
+    <input name="q" type="search">
+  </form>
+
+  <ul class="songs">
+    {{#each songs}}
+      {{> song}}
+    {{/each}}
+  </ul>
+</body>
+
+<template name="song">
+  <li>
+    <img class="cover" src="{{image}}">
+    <div class="track"><b>{{artist}}</b>: {{title}}</div>
+    <div class="album">{{album}}</div>
+  </li>
+</template>
